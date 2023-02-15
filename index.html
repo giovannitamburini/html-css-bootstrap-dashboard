@@ -17,8 +17,14 @@
     <nav class="w-100 d-flex justify-content-between align-items-center gap-4 my-nav px-3">
         
         <img class="h-50" src="img/logo.svg" alt="">
+
+        <div class="w-100 position-relative">
+            <input class="form-control form-control-lg text-bg-light px-5" type="text" placeholder="Prova a cercare: Lezioni di Laravel" aria-label=".form-control-lg example">
+            <div class="position-absolute top-50 start-0 translate-middle-y ps-3 fs-4">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div> 
         
-        <input class="form-control form-control-lg text-bg-light px-5" type="text" placeholder="Prova a cercare: Lezioni di Laravel" aria-label=".form-control-lg example">
 
 
         <div class="d-flex justify-content-between align-items-center gap-4 fs-4">
@@ -61,7 +67,7 @@
         <!-- /aside bar -->
 
         <!-- right -->
-        <div id="my-small-div">
+        <div id="my-small-div" class="d-flex flex-column">
 
             <!-- header -->
             <header id="my-header" class="d-flex justify-content-between py-3 ps-3 pe-5 text-white">
@@ -98,38 +104,63 @@
             <div class="container">
                 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Start Bootstrap</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Inserisci un nuovo studente</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Contact
-                          </a>
-                          <ul class="dropdown-menu text-bg-dark border-white">
-                            <li><a class="dropdown-item text-white" href="#">Email</a></li>
-                            <li><a class="dropdown-item text-white" href="#">Telephone</a></li>
-                            <li>
-                              <hr class="dropdown-divider border-white">
-                            </li>
-                            <li><a class="dropdown-item text-white" href="#">Facebook</a></li>
-                          </ul>
-                        </li>
-                      </ul>
+
+                        <div class="d-flex gap-2">
+                            <div class="mb-3 w-50">
+                                <label for="exampleInputEmail1" class="form-label">Nome</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3 w-50">
+                                <label for="exampleInputEmail1" class="form-label">Cognome</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <div class="mb-3 w-50">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <div class="input-group">
+                                    <div class="input-group-text" id="btnGroupAddon">@</div>
+                                    <input type="text" class="form-control" aria-label="Input group example" aria-describedby="btnGroupAddon">
+                                </div>
+                            </div>
+                            <div class="mb-3 w-50">
+                                <label for="exampleInputEmail1" class="form-label">Password</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <div class="mb-3 w-50">
+                                <label for="exampleInputEmail1" class="form-label">Indirizzo Email</label>
+                                <div class="input-group">
+                                    <div class="input-group-text" id="btnGroupAddon">@</div>
+                                    <input type="text" class="form-control" aria-label="Input group example" aria-describedby="btnGroupAddon">
+                                </div>
+                            </div>
+                            <div class="mb-3 w-50">
+                                <label for="exampleInputEmail1" class="form-label">Password</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Password</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+
+
                     </div>
                   </div>
             </div>
             <!-- /header -->
 
             <!-- main -->
-            <main class="row m-0" id="my-main">
+            <main class="row m-0 overflow-y-auto" id="my-main">
 
                 <div class="col-8 py-4" id="my-col-left">
 
@@ -152,7 +183,7 @@
                                     </thead>
                                     <tbody>
                                       <tr>
-                                        <th scope="row" class="d-flex align-items-center gap-2"><img class="my-image-avatar" src="img/class-avatar.jpg" alt=""> Classe 75</th>
+                                        <th scope="row" class=""><img class="my-image-avatar" src="img/class-avatar.jpg" alt=""> Classe 75</th>
                                         <td>15 Feb 2021</td>
                                         <td>20%</td>
                                         <td><div class="text-bg-success rounded-2 px-2">Done</div></td>
@@ -162,7 +193,7 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <th scope="row" class="d-flex align-items-center gap-2"><img class="my-image-avatar" src="img/class-avatar.jpg" alt=""> Classe 75</th>
+                                        <th scope="row" class=""><img class="my-image-avatar" src="img/class-avatar.jpg" alt=""> Classe 75</th>
                                         <td>15 Feb 2021</td>
                                         <td>20%</td>
                                         <td><div class="text-bg-success rounded-2 px-2">Done</div></td>
@@ -172,7 +203,7 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <th scope="row" class="d-flex align-items-center gap-2"><img class="my-image-avatar" src="img/class-avatar.jpg" alt=""> Classe 75</th>
+                                        <th scope="row" class=""><img class="my-image-avatar" src="img/class-avatar.jpg" alt=""> Classe 75</th>
                                         <td>15 Feb 2021</td>
                                         <td>20%</td>
                                         <td><div class="text-bg-success rounded-2 px-2">Done</div></td>
@@ -182,7 +213,7 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <th scope="row" class="d-flex align-items-center gap-2"><img class="my-image-avatar" src="img/class-avatar.jpg" alt=""> Classe 75</th>
+                                        <th scope="row" class=""><img class="my-image-avatar" src="img/class-avatar.jpg" alt=""> Classe 75</th>
                                         <td>15 Feb 2021</td>
                                         <td>20%</td>
                                         <td><div class="text-bg-success rounded-2 px-2">Done</div></td>
@@ -192,7 +223,7 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <th scope="row" class="d-flex align-items-center gap-2"><img class="my-image-avatar" src="img/class-avatar.jpg" alt=""> Classe 75</th>
+                                        <th scope="row" class=""><img class="my-image-avatar" src="img/class-avatar.jpg" alt=""> Classe 75</th>
                                         <td>15 Feb 2021</td>
                                         <td>20%</td>
                                         <td><div class="text-bg-success rounded-2 px-2">Done</div></td>
@@ -202,7 +233,7 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <th scope="row" class="d-flex align-items-center gap-2"><img class="my-image-avatar" src="img/class-avatar.jpg" alt=""> Classe 75</th>
+                                        <th scope="row" class=""><img class="my-image-avatar" src="img/class-avatar.jpg" alt=""> Classe 75</th>
                                         <td>15 Feb 2021</td>
                                         <td>20%</td>
                                         <td><div class="text-bg-success rounded-2 px-2">Done</div></td>
@@ -212,7 +243,7 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <th scope="row" class="d-flex align-items-center gap-2"><img class="my-image-avatar" src="img/class-avatar.jpg" alt=""> Classe 75</th>
+                                        <th scope="row" class=""><img class="my-image-avatar" src="img/class-avatar.jpg" alt=""> Classe 75</th>
                                         <td>15 Feb 2021</td>
                                         <td>20%</td>
                                         <td><div class="text-bg-success rounded-2 px-2">Done</div></td>
@@ -222,7 +253,7 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <th scope="row" class="d-flex align-items-center gap-2"><img class="my-image-avatar" src="img/class-avatar.jpg" alt=""> Classe 75</th>
+                                        <th scope="row" class=""><img class="my-image-avatar" src="img/class-avatar.jpg" alt=""> Classe 75</th>
                                         <td>15 Feb 2021</td>
                                         <td>20%</td>
                                         <td><div class="text-bg-success rounded-2 px-2">Done</div></td>

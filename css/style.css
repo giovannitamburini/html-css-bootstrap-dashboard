@@ -7,20 +7,13 @@
 }
 
 #my-aside {
-    width: 120px;
+    min-width: 120px;
     background-color: #051e34;
     background-image: url("/img/sidebar-bg.png");
 }
 
-#my-small-div {
-    width: calc(100% - 120px);
-}
-
 #my-header {
     background-color: #1b72e8;
-}
-
-#my-main {
 }
 
 #my-col-left {
