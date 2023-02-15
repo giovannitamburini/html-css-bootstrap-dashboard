@@ -16,3 +16,11 @@
     width: calc(100% - 200px);
     background-color: blue;
 }
+
+#my-col-left {
+    background-color: orange;
+}
+
+#my-col-right {
+    background-color: aqua;
+}
