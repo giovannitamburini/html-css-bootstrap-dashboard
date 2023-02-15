@@ -1,18 +1,19 @@
 .my-nav {
-    height: 80px;
+    height: 60px;
 }
 
 .my-big-div {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 60px);
 }
 
 #my-aside {
-    width: 200px;
-    background-color: green;
+    width: 120px;
+    background-color: #051e34;
+    background-image: url("/img/sidebar-bg.png");
 }
 
 #my-main {
-    width: calc(100% - 200px);
+    width: calc(100% - 120px);
     background-color: blue;
 }
 
