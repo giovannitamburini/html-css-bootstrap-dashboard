@@ -1,0 +1,18 @@
+.my-nav {
+    height: 80px;
+    background-color: red;
+}
+
+.my-big-div {
+    height: calc(100vh - 80px);
+}
+
+#my-aside {
+    width: 200px;
+    background-color: green;
+}
+
+#my-main {
+    width: calc(100% - 200px);
+    background-color: blue;
+}
