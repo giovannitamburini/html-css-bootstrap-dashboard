@@ -7,7 +7,7 @@
 }
 
 #my-aside {
-    min-width: 120px;
+    min-width: 60px;
     background-color: #051e34;
     background-image: url("/img/sidebar-bg.png");
 }
@@ -23,5 +23,15 @@
     width: 20px;
 }
 
+#my-th-tab {
+    width: 60%;
+}
+
 #my-col-right {
+}
+
+@media screen and (min-width: 768px) {
+    #my-aside {
+        min-width: 120px;
+    }    
 }
