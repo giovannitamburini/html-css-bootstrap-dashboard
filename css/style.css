@@ -12,15 +12,23 @@
     background-image: url("/img/sidebar-bg.png");
 }
 
-#my-main {
+#my-small-div {
     width: calc(100% - 120px);
-    background-color: blue;
+}
+
+#my-header {
+    background-color: #1b72e8;
+}
+
+#my-main {
 }
 
 #my-col-left {
-    background-color: orange;
+}
+
+.my-image-avatar {
+    width: 20px;
 }
 
 #my-col-right {
-    background-color: aqua;
 }
