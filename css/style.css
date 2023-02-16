@@ -23,8 +23,10 @@
     width: 20px;
 }
 
-#my-th-tab {
-    width: 60%;
+.my-table th:not(:first-child),
+.my-table td:not(:first-child) {
+    width: 100px;
+    text-align: center;
 }
 
 #my-col-right {
@@ -35,3 +37,4 @@
         min-width: 120px;
     }    
 }
+
