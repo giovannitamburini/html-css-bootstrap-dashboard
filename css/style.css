@@ -20,6 +20,14 @@
     background-color: #1b72e8;
 }
 
+#my-header .my-pill {
+    background-color: #165bba;
+}
+
+.offcanvas.offcanvas-end.my-offcanvas {
+    width: 550px;
+}
+
 .my-image-avatar {
     width: 20px;
 }
@@ -30,9 +38,14 @@
     text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+    .offcanvas.offcanvas-end.my-offcanvas {
+        width: 100%;
+    }
+}
+
 @media screen and (min-width: 992px) {
     #my-aside {
         min-width: 120px;
     }
 }
-
