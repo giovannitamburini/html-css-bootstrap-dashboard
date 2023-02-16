@@ -16,8 +16,8 @@
 
     <nav class="w-100 d-flex justify-content-between align-items-center gap-4 my-nav px-3">
         
-        <img class="h-50 d-none d-md-block" src="img/logo.svg" alt="">
-        <img class="h-75 d-md-none" src="img/mobile-logo.png" alt="">
+        <img class="h-50 d-none d-lg-block" src="img/logo.svg" alt="">
+        <img class="h-75 d-lg-none" src="img/mobile-logo.png" alt="">
 
         <div class="w-100 position-relative">
             <input class="form-control form-control-lg text-bg-light px-5" type="text" placeholder="Prova a cercare: Lezioni di Laravel" aria-label=".form-control-lg example">
@@ -43,24 +43,24 @@
         <aside id="my-aside" class="d-flex flex-column justify-content-between align-items-center py-4">
             
             <div class="">
-                <a href="" class="d-flex align-items-center gap-3 text-decoration-none text-white pb-3 ">
+                <a href="" class="d-flex align-items-center gap-3 text-decoration-none text-white p-1 my-aside-link">
                     <div><i class="fa-solid fa-house"></i></div>
-                    <div class="d-none d-md-block">Home</div>
+                    <div class="d-none d-lg-block">Home</div>
                 </a>
-                <a href="" class="d-flex align-items-center gap-3 text-decoration-none text-white pb-3 ">
+                <a href="" class="d-flex align-items-center gap-3 text-decoration-none text-white my-2 p-1 my-aside-link">
                     <div><i class="fa-solid fa-chart-simple"></i></div>
-                    <div class="d-none d-md-block">Stats</div>
+                    <div class="d-none d-lg-block">Stats</div>
                 </a>
-                <a href="" class="d-flex align-items-center gap-3 text-decoration-none text-white pb-3 ">
+                <a href="" class="d-flex align-items-center gap-3 text-decoration-none text-white p-1 my-aside-link">
                     <div><i class="fa-solid fa-signal"></i></div>
-                    <div class="d-none d-md-block">Signals</div>
+                    <div class="d-none d-lg-block">Signals</div>
                 </a>
             </div>
 
             <div class="my-div">
-                <a href="" class="d-flex align-items-center gap-3 text-decoration-none text-white ">
+                <a href="" class="d-flex align-items-center gap-3 text-decoration-none text-white p-1 my-aside-link">
                     <div><i class="fa-solid fa-gear"></i></div>
-                    <div class="d-none d-md-block">Admin</div>
+                    <div class="d-none d-lg-block">Admin</div>
                 </a>
             </div>
 
@@ -104,6 +104,7 @@
                 
             </header>
 
+            <!-- offcanvas -->
             <div class="container">
                 <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
@@ -112,40 +113,40 @@
                     </div>
                     <div class="offcanvas-body">
 
-                        <div class="d-flex gap-2">
-                            <div class="mb-3 w-50">
+                        <div class="d-md-flex gap-2">
+                            <div class="mb-3 w-100">
                                 <label for="exampleInputEmail1" class="form-label">Nome</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
-                            <div class="mb-3 w-50">
+                            <div class="mb-3 w-100">
                                 <label for="exampleInputEmail1" class="form-label">Cognome</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
                         </div>
 
-                        <div class="d-flex gap-2">
-                            <div class="mb-3 w-50">
+                        <div class="d-md-flex gap-2">
+                            <div class="mb-3 w-100">
                                 <label for="exampleInputEmail1" class="form-label">Email</label>
                                 <div class="input-group">
                                     <div class="input-group-text" id="btnGroupAddon">@</div>
                                     <input type="text" class="form-control" aria-label="Input group example" aria-describedby="btnGroupAddon">
                                 </div>
                             </div>
-                            <div class="mb-3 w-50">
+                            <div class="mb-3 w-100">
                                 <label for="exampleInputEmail1" class="form-label">Password</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
                         </div>
 
-                        <div class="d-flex gap-2">
-                            <div class="mb-3 w-50">
+                        <div class="d-md-flex gap-2">
+                            <div class="mb-3 w-100">
                                 <label for="exampleInputEmail1" class="form-label">Indirizzo Email</label>
                                 <div class="input-group">
                                     <div class="input-group-text" id="btnGroupAddon">@</div>
                                     <input type="text" class="form-control" aria-label="Input group example" aria-describedby="btnGroupAddon">
                                 </div>
                             </div>
-                            <div class="mb-3 w-50">
+                            <div class="mb-3 w-100">
                                 <label for="exampleInputEmail1" class="form-label">Password</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
@@ -156,9 +157,9 @@
                             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
 
-                        <div class="d-flex gap-2">
+                        <div class="d-md-flex gap-2">
                             
-                            <div class="mb-3 w-100">
+                            <div class="mb-3 w-50">
                                 <label for="exampleInputEmail1" class="form-label">Password</label>
                                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
@@ -192,6 +193,7 @@
                     </div>
                   </div>
             </div>
+            <!-- /offcanvas -->
             <!-- /header -->
 
             <!-- main -->
