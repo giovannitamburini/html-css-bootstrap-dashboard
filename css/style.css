@@ -25,7 +25,7 @@
 }
 
 .offcanvas.offcanvas-end.my-offcanvas {
-    width: 550px;
+    width: 580px;
 }
 
 .my-image-avatar {
@@ -38,7 +38,7 @@
     text-align: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
     .offcanvas.offcanvas-end.my-offcanvas {
         width: 100%;
     }
