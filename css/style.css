@@ -16,9 +16,6 @@
     background-color: #1b72e8;
 }
 
-#my-col-left {
-}
-
 .my-image-avatar {
     width: 20px;
 }
@@ -29,12 +26,9 @@
     text-align: center;
 }
 
-#my-col-right {
-}
-
 @media screen and (min-width: 768px) {
     #my-aside {
         min-width: 120px;
-    }    
+    }
 }
 
